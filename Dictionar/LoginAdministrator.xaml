@@ -1,0 +1,25 @@
+﻿<Window x:Class="Dictionar.LoginAdministrator"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Dictionar"
+        mc:Ignorable="d"
+        Title="Login Administrator" Height="450" Width="800">
+    <Grid>
+        <!--<Grid.Background>
+            <SolidColorBrush Color="LightGray"/>
+        </Grid.Background>-->
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+            
+            <Image Source="Images/deximage.png" Height="100" Width ="200 " Margin="5"/>
+            <Label Content="Username"/>
+            <TextBox x:Name="txtUsername" Width="200" Margin="5"/>
+            <Label Content="Password"/>
+            <PasswordBox x:Name="txtPassword" Width="200" Margin="5"/>
+            <Button x:Name="btnLogin" Width="200" Margin="5" Content="Login" Click="btnLogin_Click"/>
+            <Button x:Name="btnCancel" Width="200" Margin="5" Content="Cancel" Click="btnCancel_Click"/>
+            <Button x:Name="btnMenu"  Content="Meniu" VerticalAlignment="Center" Width="200" Margin="5" Click="btnMenu_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>
